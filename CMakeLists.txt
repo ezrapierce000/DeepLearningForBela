@@ -38,7 +38,7 @@ if(ENABLE_PYTORCH_FRONTEND)
     add_compile_definitions(ENABLE_PYTORCH_FRONTEND)
     # find pytorch
     # -DCMAKE_PREFIX_PATH=/absolute/path/to/libtorch
-    list(APPEND CMAKE_PREFIX_PATH /opt/pytorch-install)
+    list(APPEND CMAKE_PREFIX_PATH /opt/libtorch)
     find_package(Torch REQUIRED)
 endif()
 
